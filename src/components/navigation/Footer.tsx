@@ -22,7 +22,7 @@ export function Footer() {
               <li>Testing & QA</li>
               <li>Ciberseguridad</li>
               <li>Desarrollo Web</li>
-              <li>E-commerce</li>
+              <li>Paginas online</li>
             </ul>
           </section>
 
@@ -31,9 +31,9 @@ export function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li><a href="mailto:contacto@tusitio.com" className="hover:underline">info@grupoignatech.com</a></li>
               
-              <li><a href="https://wa.me/5491123456789" className="hover:underline flex gap-1" >Whatsapp <FiMessageCircle size={24} className="text-emerald-600"/></a></li> 
-              <li><a href="https://linkedin.com/in/tu-perfil" className="hover:underline flex gap-3">LinkedIn <FiLinkedin size={24} className="text-blue-400" /></a></li>
-              <li><a href="https://github.com/tu-perfil" className="hover:underline flex gap-4">GitHub <FiGithub size={24} className="text-white" /></a></li>
+              <li><a href="https://wa.me/5492213183837" className="hover:underline flex gap-1" >Whatsapp <FiMessageCircle size={24} className="text-emerald-600"/></a></li> 
+              <li><a href="https://linkedin.com/in/ignatech" className="hover:underline flex gap-3">LinkedIn <FiLinkedin size={24} className="text-blue-400" /></a></li>
+              <li><a href="https://github.com/ignatech" className="hover:underline flex gap-4">GitHub <FiGithub size={24} className="text-white" /></a></li>
             </ul>
           </section>
         </div>

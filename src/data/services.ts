@@ -1,4 +1,4 @@
-import { Bug, Shield, Globe, ShoppingCart, Code, Smartphone } from "lucide-react"
+import { Bug, Shield, Globe, ShoppingCart, Code, Megaphone} from "lucide-react"
 
 export const services = [
   {
@@ -23,12 +23,12 @@ export const services = [
   },
   {
     icon: Code,
-    title: "Desarrollo Custom",
+    title: "Desarrollo personalizado",
     description: "Soluciones a medida para necesidades específicas",
   },
   {
-    icon: Smartphone,
-    title: "Apps Móviles",
-    description: "Aplicaciones nativas e híbridas para iOS y Android",
+    icon: Megaphone,
+    title: "Publicidad (Ads)",
+    description: "Publicidad digital en google y Meta Ads",
   },
 ]

@@ -10,14 +10,14 @@ export const proyectos: ProyectoTarjeta[] = [
   {
     titulo: "Tienda de moda urbana",
     descripcion: "Ecommerce con pasarela de pago y diseño responsive.",
-    imageUrl: "/images/tienda.jpg",
+    imageUrl: "/images/ecommerce.png",
     link: "https://tienda-moda.com",
     
   },
   {
     titulo: "Landing Page Automores",
     descripcion: "Diseño elegante con menu interactivo.",
-    imageUrl: "/images/restaurante.jpg",
+    imageUrl: "/images/autos.png",
     link: "https://resto-ejemplo.com",
   },
   {
@@ -32,3 +32,5 @@ export const proyectos: ProyectoTarjeta[] = [
     descripcion: "Sistema interno para empresas medianas.",
   },
 ]
+
+

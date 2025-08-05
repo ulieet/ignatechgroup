@@ -1,14 +1,14 @@
 "use client"
 
-import ProyectosGrid from "@/components/navigation/ProyectGrid"
-import {Services} from "@/components/navigation/ServicesGrid"
+
 
 export default function HeroSection() {
   return (
-    <section className="pt-32 pb-20 px-2 mt-10">
+    <section className="pt-32 pb-20 px-2 mt-7">
       <div className="container mx-auto text-center">
-
+  
         {/* Título principal con animación */}
+        
         <div className="mb-10">
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-10 animate-fade-in-up">
             <span className="animate-glow">Grupo</span>{" "}
@@ -20,12 +20,11 @@ export default function HeroSection() {
         </div>
 
         <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-4xl mx-auto animate-fade-in-up animation-delay-300">
-          Transformamos Ideas en Soluciones Digitales
+          Transformamos tu negocio en Soluciones Digitales
         </p>
 
         <p className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up animation-delay-500">
-          Especialistas en desarrollo web, ciberseguridad, testing y e-commerce. Llevamos tu negocio al siguiente nivel
-          con tecnología de vanguardia.
+          Especialistas en desarrollo web, ciberseguridad, testing y e-commerce. Llevamos tu negocio al siguiente nivel.
         </p>
 
         {/* Botones reemplazados con enlaces */}
@@ -34,7 +33,7 @@ export default function HeroSection() {
             href="#"
             className="text-center px-6 py-3 text-lg font-medium rounded-md bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
           >
-            Comenzar Proyecto
+            Pedir Proyecto
           </a>
           <a
             href="#"
@@ -45,8 +44,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-    <ProyectosGrid/>
-    <Services/>
+    
 
       {/* Estilos animaciones */}
       <style jsx>{`

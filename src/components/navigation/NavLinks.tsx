@@ -8,6 +8,7 @@ interface NavLinksProps {
 export function NavLinks({ className = "" }: NavLinksProps) {
   return (
     <>
+    
       <Link href="#servicios" className={className}>
         Servicios
       </Link>

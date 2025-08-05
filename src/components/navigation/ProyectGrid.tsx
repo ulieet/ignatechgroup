@@ -7,12 +7,12 @@ import { motion } from "framer-motion"
 
 export default function ProjectsSection() {
   return (
-    <section className="py-20 px-4 bg-slate-900/50 mt-20 mb-10">
+    <section className="py-20 px-4 bg-slate-900/50 mt-2 ">
       <div className="container mx-auto mb-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">Nuestros Proyectos Destacados</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Explora algunos de los trabajos que hemos realizado para nuestros clientes.
+            Explora algunos de los trabajos a medida que ofrecemos a nuestros clientes
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
