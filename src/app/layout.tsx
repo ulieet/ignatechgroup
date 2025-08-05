@@ -1,4 +1,4 @@
-// app/layout.tsx
+
 import "./globals.css";
 import Header from "@/components/navigation/Header"
 import { Footer } from "@/components/navigation/Footer";
@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: {s
+}: {
   children: React.ReactNode;
 }) {
   return (

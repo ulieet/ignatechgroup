@@ -1,6 +1,6 @@
 // components/navigation/Navbar.tsx
 import { NavLinks } from "@/components/navigation/NavLinks"
-export function Navbar() {
+export function NavBar() {
   return (
     <nav className="hidden md:flex space-x-8" aria-label="Menú principal">
       
