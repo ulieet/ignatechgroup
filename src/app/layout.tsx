@@ -1,10 +1,10 @@
 // app/layout.tsx
 import "./globals.css";
-import Header from "../components/navigation/Header"
-import { Footer } from "../components/navigation/Footer";
+import Header from "@/components/navigation/Header"
+import { Footer } from "@/components/navigation/Footer";
 export const metadata = {
-  title: "Mi App",
-  description: "Descripción de mi app",
+  title: "grupo ignatech",
+  description: "No hay desc",
 };
 
 export default function RootLayout({

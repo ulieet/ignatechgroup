@@ -1,6 +1,6 @@
 // components/navigation/Header.tsx
 import Link from "next/link"
-import { Navbar } from "@/components/navigation/Navbar"
+import { Navbar } from "@/components/navigation/NavBar"
 import { MobileMenu } from "@/components/navigation/MobileMenu"
 
 export default function Header() {

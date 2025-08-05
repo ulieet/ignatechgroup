@@ -1,12 +1,15 @@
 "use client"
 
+import ProyectosGrid from "@/components/navigation/ProyectGrid"
+import {Services} from "@/components/navigation/ServicesGrid"
+
 export default function HeroSection() {
   return (
-    <section className="pt-32 pb-20 px-2">
+    <section className="pt-32 pb-20 px-2 mt-10">
       <div className="container mx-auto text-center">
 
         {/* Título principal con animación */}
-        <div className="mb-5">
+        <div className="mb-10">
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-10 animate-fade-in-up">
             <span className="animate-glow">Grupo</span>{" "}
             <span className="k text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 animate-pulse-slow">
@@ -41,6 +44,9 @@ export default function HeroSection() {
           </a>
         </div>
       </div>
+
+    <ProyectosGrid/>
+    <Services/>
 
       {/* Estilos animaciones */}
       <style jsx>{`
