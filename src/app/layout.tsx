@@ -25,11 +25,8 @@ export default function RootLayout({
         <Header/>
         <FloatingLogo/>
         <ProyectosGrid/>
-        
         <Services/>
-        
       <ContactFormSection/>
-       
         <Footer/>
       </body>
       

@@ -7,8 +7,7 @@ export default function HeroSection() {
     <section className="pt-32 pb-20 px-2 mt-7">
       <div className="container mx-auto text-center">
   
-        {/* Título principal con animación */}
-        
+
         <div className="mb-10">
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-10 animate-fade-in-up">
             <span className="animate-glow">Grupo</span>{" "}
@@ -27,7 +26,7 @@ export default function HeroSection() {
           Especialistas en desarrollo web, ciberseguridad, testing y e-commerce. Llevamos tu negocio al siguiente nivel.
         </p>
 
-        {/* Botones reemplazados con enlaces */}
+      
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-700">
           <a
             href="#"
@@ -46,7 +45,7 @@ export default function HeroSection() {
 
     
 
-      {/* Estilos animaciones */}
+
       <style jsx>{`
         @keyframes fade-in-up {
           from {
