@@ -9,16 +9,7 @@ export default function Header() {
         <Link href="/">
         <img src="/images/Group.svg" alt="Ignatech" className="h-12 cursor-pointer" />
       </Link>
-<<<<<<< HEAD
-        
-
-        {/* Navbar desktop */}
         <NavBar />
-
-        {/* Menú móvil */}
-=======
-        <NavBar />
->>>>>>> de4e9fa (DEFINITVO)
         <MobileMenu />
       </div>
     </header>
