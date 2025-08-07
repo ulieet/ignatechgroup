@@ -1,10 +1,9 @@
-// Paquetes externos
+
 import Link from "next/link"
 import { Menu } from "lucide-react"
 import { DialogTitle } from "@radix-ui/react-dialog"
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
 
-// Componentes internos
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { NavLinks } from "@/components/navigation/NavLinks"

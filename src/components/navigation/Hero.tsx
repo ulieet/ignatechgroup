@@ -2,7 +2,7 @@
 
 
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-2 mt-7">
       <div className="container mx-auto text-center">
@@ -32,13 +32,13 @@ export default function HeroSection() {
             href="#"
             className="text-center px-6 py-3 text-lg font-medium rounded-md bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
           >
-            Pedir Proyecto
+            Pedir Cotizacion
           </a>
           <a
             href="#"
             className="text-center px-6 py-3 text-lg font-medium rounded-md border border-purple-400 text-purple-200 hover:bg-purple-600/20 bg-transparent hover:border-purple-300 transition-all duration-300"
           >
-            Ver Portfolio
+            Ver Proyectos
           </a>
         </div>
       </div>

@@ -1,7 +1,17 @@
+"use client";
 
-import {FiMessageCircle, FiLinkedin, FiGithub} from "react-icons/fi"
+import { useState, useEffect } from "react";
+import { FiMessageCircle, FiLinkedin, FiGithub } from "react-icons/fi";
 
 export function Footer() {
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    const user = "info";
+    const domain = "grupoignatech.com";
+    setEmail(`${user}@${domain}`);
+  }, []);
+
   return (
     <footer id="contacto" className="py-12 px-4 bg-slate-950 border-t border-purple-400/20">
       <div className="container mx-auto">
@@ -23,15 +33,21 @@ export function Footer() {
               <li>Ciberseguridad</li>
               <li>Desarrollo Web</li>
               <li>Paginas online</li>
+              <li>Ads</li>
             </ul>
           </section>
 
           <section>
             <h4 className="font-semibold text-white mb-4">Contacto</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="mailto:contacto@tusitio.com" className="hover:underline">info@grupoignatech.com</a></li>
-              
-              <li><a href="https://wa.me/5492213183837" className="hover:underline flex gap-1" >Whatsapp <FiMessageCircle size={24} className="text-emerald-600"/></a></li> 
+              <li>
+                {email ? (
+                  <a href={`mailto:${email}`} className="hover:underline">{email}</a>
+                ) : (
+                  <span className="text-gray-500">Cargando...</span>
+                )}
+              </li>
+              <li><a href="https://wa.me/5492213183837" className="hover:underline flex gap-1">Whatsapp <FiMessageCircle size={24} className="text-emerald-600"/></a></li> 
               <li><a href="https://linkedin.com/in/ignatech" className="hover:underline flex gap-3">LinkedIn <FiLinkedin size={24} className="text-blue-400" /></a></li>
               <li><a href="https://github.com/ignatech" className="hover:underline flex gap-4">GitHub <FiGithub size={24} className="text-white" /></a></li>
             </ul>
@@ -43,5 +59,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

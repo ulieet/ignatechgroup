@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export default function ProjectsSection() {
   return (
-    <section className="py-20 px-4 bg-slate-900/50 mt-2 ">
+    <section className="py-20 px-4 bg-slate-900/50  ">
       <div className="container mx-auto mb-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">Nuestros Proyectos Destacados</h2>
@@ -25,7 +25,7 @@ export default function ProjectsSection() {
               transition={{ duration: 1.2, delay: index * 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Card className="w-full h-full flex flex-col justify-between bg-slate-800/50 border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:scale-105 hover:shadow-lg overflow-hidden">
+              <Card className="w-full h-full flex flex-col justify-between bg-slate-800/50 border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:scale-105 hover:shadow-lg overflow-hidden hover:shadow-purple-500/20">
                 <Image
                   src={project.imageUrl || "/placeholder.svg"}
                   alt={project.titulo}
@@ -36,6 +36,7 @@ export default function ProjectsSection() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-white mb-2">{project.titulo}</h3>
                   <p className="text-gray-300 text-sm">{project.descripcion}</p>
+                  <a href={project.link} className="mt-8 inline-block text-purple-300 hover:text-purple-400 transition-colors text-md font-medium">{project.cta} &rarr; </a>
                 </CardContent>
               </Card>
             </motion.div>
