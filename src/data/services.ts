@@ -1,4 +1,4 @@
-import { Bug, Shield, Globe, ShoppingCart, Code, Megaphone,PcCaseIcon} from "lucide-react"
+import { Bug, Shield, Globe, Code, Megaphone,PcCaseIcon} from "lucide-react"
 
 export const services = [
   {

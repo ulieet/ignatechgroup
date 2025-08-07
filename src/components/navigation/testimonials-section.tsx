@@ -20,8 +20,9 @@ export function TestimonialsSection() {
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
-                </div>
-                <p className="text-gray-300 mb-4 italic">"{testimonial.content}"</p>
+                </div>  
+                <p className="text-gray-300 mb-4 italic">&quot;{testimonial.content}&quot;</p>
+
                 <div>
                   <div className="font-semibold text-white">{testimonial.name}</div>
                   <div className="text-purple-400 text-sm">{testimonial.company}</div>
