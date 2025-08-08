@@ -8,13 +8,16 @@ import {Partners} from "@/components/navigation/Partnership";
 export default function Home() {
   return (
     <>
+
       <Hero />
-<section id="proyectos" className="scroll-mt-24">
-        <ProyectosGrid />
-      </section>
+      
 
       <section id="servicios" className="scroll-mt-24">
         <Services />
+      </section>
+      
+      <section id="proyectos" className="scroll-mt-24">
+        <ProyectosGrid />
       </section>
 
       <section id="testimonios" className="scroll-mt-24">

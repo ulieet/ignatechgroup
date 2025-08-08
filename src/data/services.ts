@@ -1,46 +1,41 @@
-import { Bug, Shield, Globe, Code, Megaphone,PcCaseIcon} from "lucide-react"
+import { Bug, Shield, Globe, Code, Megaphone, Cpu } from "lucide-react";
 
 export const services = [
   {
-    icon: Bug,
+    icono: Bug,
     title: "Testing & QA",
     description: "Pruebas exhaustivas para garantizar la calidad de tu software",
     cta:"Ver mas",
     link:"#"
   },
-
   {
-    icon: PcCaseIcon,
+    icono: Cpu,  
     title: "Venta de Hardware",
-    description: "Venta de componentes",
+    description: "Venta de componentes de nuestra pagina web!",
+    link:"https://www.ignatech.com.ar"
   },
-
   {
-    icon: Shield,
+    icono: Shield,
     title: "Ciberseguridad",
     description: "Protección integral para tus sistemas y datos empresariales",
+    link: "#"  
   },
   {
-    icon: Globe,
+    icono: Globe,
     title: "Páginas Web",
     description: "Sitios web modernos, rápidos y optimizados para SEO",
+    link: "#"
   },
-  
   {
-    icon: Code,
+    icono: Code,
     title: "Desarrollo personalizado",
     description: "Soluciones a medida para necesidades específicas",
+    link: "#"
   },
   {
-    icon: Megaphone,
+    icono: Megaphone,
     title: "Publicidad (Ads)",
     description: "Publicidad digital en google y Meta Ads",
+    link: "#"
   },
-  
-/*{
-    icon: ShoppingCart,
-    title: "E-commerce",
-    description: "Tiendas online completas con sistemas de pago integrados",
-  },*/
-
-]
+];

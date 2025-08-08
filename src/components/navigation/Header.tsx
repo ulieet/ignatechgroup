@@ -9,7 +9,14 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-slate-950/90 backdrop-blur-md border-b border-purple-400/20 z-50 ">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
-        <Image src="/images/Group.svg" alt="Ignatech" className="h-12 cursor-pointer" />
+        <Image
+          src="/images/Group.svg"
+          alt="Ignatech"
+          width={180}   
+          height={48}
+          className="cursor-pointer"
+          />
+
       </Link>
         <NavBar />
         <MobileMenu />
