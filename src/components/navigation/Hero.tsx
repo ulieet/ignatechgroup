@@ -1,38 +1,74 @@
 "use client"
-
-
+import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-2 mt-7">
       <div className="container mx-auto text-center">
-  
-
-        <div className="mb-10">
-          <h1 className="text-4xl md:text-7xl font-bold text-white mb-10 animate-fade-in-up">
-            <span className="animate-glow">Grupo</span>{" "}
-            <span className="k text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300 animate-pulse-slow">
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-10"
+        >
+          <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
+            <motion.span
+              animate={{
+                textShadow: [
+                  "0 0 20px rgba(168, 85, 247, 0.5)",
+                  "0 0 30px rgba(168, 85, 247, 0.8), 0 0 40px rgba(168, 85, 247, 0.6)",
+                  "0 0 20px rgba(168, 85, 247, 0.5)",
+                ],
+              }}
+              transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
+            >
+              Grupo
+            </motion.span>{" "}
+            <motion.span
+              className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300"
+              animate={{ opacity: [1, 0.8, 1] }}
+              transition={{ duration: 4, repeat: Infinity, repeatType: "loop" }}
+            >
               Ignatech
-            </span>
+            </motion.span>
           </h1>
-          <div className="h-1 w-32 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto animate-expand"></div>
-        </div>
+          <motion.div
+            initial={{ width: 0, opacity: 0 }}
+            animate={{ width: "8rem", opacity: 1 }}
+            transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+            className="h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto"
+          />
+        </motion.div>
 
-        <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-4xl mx-auto animate-fade-in-up animation-delay-300">
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          className="text-xl md:text-2xl text-gray-200 mb-4 max-w-4xl mx-auto"
+        >
           Transformamos tu negocio en Soluciones Digitales
-        </p>
+        </motion.p>
 
-        <p className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up animation-delay-500">
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+          className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto"
+        >
           Especialistas en desarrollo web, ciberseguridad, testing y e-commerce. Llevamos tu negocio al siguiente nivel.
-        </p>
+        </motion.p>
 
-      
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-700">
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
           <a
             href="#"
             className="text-center px-6 py-3 text-lg font-medium rounded-md bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
           >
-            Pedir Cotizacion
+            Pedir Cotización
           </a>
           <a
             href="#"
@@ -40,83 +76,8 @@ export default function Hero() {
           >
             Ver Proyectos
           </a>
-        </div>
+        </motion.div>
       </div>
-
-    
-
-
-      <style jsx>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes glow {
-          0%, 100% {
-            text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
-          }
-          50% {
-            text-shadow: 0 0 30px rgba(168, 85, 247, 0.8), 0 0 40px rgba(168, 85, 247, 0.6);
-          }
-        }
-
-        @keyframes expand {
-          from {
-            width: 0;
-          }
-          to {
-            width: 8rem;
-          }
-        }
-
-        @keyframes pulse-slow {
-          0%, 100% {
-            opacity: 1;
-          }
-          50% {
-            opacity: 0.8;
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-        }
-
-        .animate-glow {
-          animation: glow 3s ease-in-out infinite;
-        }
-
-        .animate-expand {
-          animation: expand 1.5s ease-out 1s forwards;
-          width: 0;
-        }
-
-        .animate-pulse-slow {
-          animation: pulse-slow 4s ease-in-out infinite;
-        }
-
-        .animation-delay-300 {
-          animation-delay: 0.3s;
-          opacity: 0;
-        }
-
-        .animation-delay-500 {
-          animation-delay: 0.5s;
-          opacity: 0;
-        }
-
-        .animation-delay-700 {
-          animation-delay: 0.7s;
-          opacity: 0;
-        }
-      `}</style>
     </section>
   )
 }

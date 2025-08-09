@@ -7,8 +7,8 @@ import { motion } from "framer-motion"
 
 export default function ProjectsSection() {
   return (
-    <section className="py-20 px-4 bg-slate-900/50  ">
-      <div className="container mx-auto mb-20">
+    <section className="py-15 px-4 bg-slate-900/50 mb-20 "> 
+      <div className="container mx-auto mb-15"> 
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">Nuestros Proyectos Destacados</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">

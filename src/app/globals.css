@@ -50,3 +50,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+.no-animate * {
+  transition: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}

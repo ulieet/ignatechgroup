@@ -6,35 +6,46 @@ import { services } from "@/data/services"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
+
+const fadeInUp = {
+  hidden: { opacity: 2, y: 20 },
+  show: { opacity: 1, y: 0 }
+}
+
 export function Services() {
   return (
-    <section id="servicios" className="py-15 px-4 mb-10 mt-10 bg-slate-900/50">
+    <section id="servicios" className="py-15 px-4 mt-8 bg-slate-900/50 mt">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <motion.h2 
+            variants={fadeInUp}
+            initial="hidden"
+            animate="show"
+            transition={{ duration: 0.9 }}
             className="text-3xl md:text-4xl font-bold text-white mb-20"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
           >
             Nuestros Servicios
           </motion.h2>
+
           <motion.p 
+            variants={fadeInUp}
+            initial="hidden"
+            animate="show"
+            transition={{ duration: 0.6 }}
             className="text-gray-300 text-lg max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
           >
             Ofrecemos soluciones tecnológicas integrales para impulsar tu negocio
           </motion.p>
+          
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15, duration: 0.5 }}
+              variants={fadeInUp}
+              initial="hidden"
+              animate="show"
+              transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.05 }}
               className="h-full"
             >
