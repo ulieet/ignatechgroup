@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import React from "react"
 
@@ -11,7 +12,6 @@ export function NavLinks({ className = "" }: NavLinksProps) {
   const pathname = usePathname()
   const router = useRouter()
 
-  // Scroll con doble requestAnimationFrame para evitar saltos
   const smoothScrollTo = (id: string) => {
     let tries = 0
     const maxTries = 15
@@ -34,34 +34,32 @@ export function NavLinks({ className = "" }: NavLinksProps) {
     attemptScroll()
   }
 
-  const handleScrollOrNavigate = (e: React.MouseEvent, targetId: string, targetPath: string) => {
-    e.preventDefault()
-
+  const handleClick = (e: React.MouseEvent, targetId: string, targetPath: string) => {
+    // Si estoy en la misma página y quiero hacer scroll
     if (pathname === targetPath) {
+      e.preventDefault()
       smoothScrollTo(targetId)
-    } else {
-      // Navegar incluyendo el hash para que Home detecte y haga scroll
-      router.push(`${targetPath}#${targetId}`)
     }
+    // Si es otra página dejo que Next.js haga el routing normal con Link
   }
 
   return (
     <>
-      <a href="/#inicio" className={className} onClick={(e) => handleScrollOrNavigate(e, "inicio", "/")}>
+      <Link href="/#inicio" scroll={false} className={className} onClick={(e) => handleClick(e, "inicio", "/")}>
         Inicio
-      </a>
+      </Link>
 
-      <a href="/#servicios" className={className} onClick={(e) => handleScrollOrNavigate(e, "servicios", "/")}>
+      <Link href="/#servicios" scroll={false} className={className} onClick={(e) => handleClick(e, "servicios", "/")}>
         Servicios
-      </a>
+      </Link>
 
-      <a href="/nosotros" className={className}>
+      <Link href="/nosotros" className={className}>
         Nosotros
-      </a>
+      </Link>
 
-      <a href="/#contacto" className={className} onClick={(e) => handleScrollOrNavigate(e, "contacto", "/")}>
+      <Link href="/#contacto" scroll={false} className={className} onClick={(e) => handleClick(e, "contacto", "/")}>
         Contacto
-      </a>
+      </Link>
     </>
   )
 }
