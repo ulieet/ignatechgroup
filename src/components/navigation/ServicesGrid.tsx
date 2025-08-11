@@ -14,9 +14,9 @@ const fadeInUp = {
 
 export function Services() {
   return (
-    <section id="servicios" className="py-15 px-4 mt-8 bg-slate-900/50 mt">
+    <section id="servicios" className="py-15 px-4 bg-slate-900/50 ">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-5">
           <motion.h2 
             variants={fadeInUp}
             initial="hidden"
