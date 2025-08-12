@@ -34,13 +34,18 @@ export function NavLinks({ className = "" }: NavLinksProps) {
     attemptScroll()
   }
 
-  const handleClick = (e: React.MouseEvent, targetId: string, targetPath: string) => {
-    // Si estoy en la misma página y quiero hacer scroll
-    if (pathname === targetPath) {
-      e.preventDefault()
+  const handleClick = async (e: React.MouseEvent, targetId: string, targetPath: string) => {
+    e.preventDefault()
+
+    if (pathname !== targetPath) {
+     
+      await router.push(targetPath)
+  
+      smoothScrollTo(targetId)
+    } else {
+    
       smoothScrollTo(targetId)
     }
-    // Si es otra página dejo que Next.js haga el routing normal con Link
   }
 
   return (
@@ -53,13 +58,15 @@ export function NavLinks({ className = "" }: NavLinksProps) {
         Servicios
       </Link>
 
+       <Link href="/#contacto" scroll={false} className={className} onClick={(e) => handleClick(e, "contacto", "/")}>
+        Contacto
+      </Link>
+
       <Link href="/nosotros" className={className}>
         Nosotros
       </Link>
 
-      <Link href="/#contacto" scroll={false} className={className} onClick={(e) => handleClick(e, "contacto", "/")}>
-        Contacto
-      </Link>
+     
     </>
   )
 }

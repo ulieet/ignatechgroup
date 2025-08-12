@@ -2,8 +2,6 @@
 @import "@radix-ui/themes/styles.css";
 @import "tw-animate-css";
 
-@import "@radix-ui/themes/styles.css";
-@import "tw-animate-css"; 
 
 :root {
 
@@ -45,8 +43,6 @@
 }
 
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -56,4 +52,24 @@ html {
   transition: none !important;
   transform: none !important;
   opacity: 1 !important;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.font-calibri {
+  font-family: Calibri, Arial, sans-serif;
+  font-size:20px;
+}
+
+
+.word-spacing-tight {
+  word-spacing: 0.03em;
+}
+
+
+.hyphenate {
+  hyphens: auto !important;
 }

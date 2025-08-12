@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import '@/app/globals.css';
+
+
+
 
 type CardInfoProps = {
   imageSrc: string;
@@ -29,9 +33,9 @@ export default function CardGrande() {
 function CardInfo({ imageSrc, imageAlt, title, description }: CardInfoProps) {
   return (
 
-    <Card className="bg-slate-800/50 backdrop-blur-sm border-slate-700/50 hover:bg-slate-800/70 transition-all duration-300 ">
+    <Card className="bg-slate-800/50 backdrop-blur-sm border-slate-700/50 hover:bg-slate-800/70 transition-all duration-300 text-justify ">
       <CardContent className="p-9">
-        <div className="relative mb-6 overflow-hidden rounded-lg h-48 w-full">
+        <div className="relative mb-6 overflow-hidden rounded-lg h-48 w-full ">
           <Image
             src={imageSrc}
             alt={imageAlt}
@@ -41,8 +45,8 @@ function CardInfo({ imageSrc, imageAlt, title, description }: CardInfoProps) {
             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
           />
         </div>
-        <h3 className="text-2xl font-bold text-white mb-4">{title}</h3>
-        <p className="text-gray-300 leading-relaxed">{description}</p>
+        <h3 className="text-2xl font-bold text-white mb-4 ">{title}</h3>
+        <p className="text-gray-300 leading-relaxed word-normal-spacing hyphenate">{description}</p>
       </CardContent>
     </Card>
   );
