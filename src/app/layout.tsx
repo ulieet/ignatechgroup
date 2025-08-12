@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/navigation/Header";
 import { Footer } from "@/components/navigation/Footer";
 import FloatingLogo from "@/components/navigation/Floatwsp";
+import { ScrollToHashOnRouteChange } from "@/components/navigation/ScrollToHashOnRouteChange";
 
 export default function RootLayout({
   children,
@@ -13,7 +14,7 @@ export default function RootLayout({
       <body className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950">
         <Header />
         <FloatingLogo />
-        
+        <ScrollToHashOnRouteChange />
         <main className="min-h-screen">{children}</main>
         
         <Footer />
